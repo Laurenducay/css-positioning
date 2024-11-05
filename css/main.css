@@ -3,7 +3,7 @@
 @import url('https://fonts.googleapis.com/css?family=Quicksand|Spectral');
 
 html {
-    background-color: lightgray;
+    background-color: rgb(245, 232, 221);
     font-family: 'Quicksand', sans-serif;
     font-size: 0.95em;
     line-height: 1.5em;
@@ -19,7 +19,7 @@ body{
 h1 {
     font-weight: normal;
     margin: auto;
-    background: #fff;
+    background: #3B1E54;
     line-height: 2.5em;
     padding-left:1%;
 }
@@ -35,7 +35,7 @@ h1.page-header{
  }
  
 main.wrapper {
-    background-color: white;
+    background-color: rgb(240, 219, 255);
     overflow: auto;
     border-bottom-left-radius: 5px;
     border-bottom-right-radius: 5px;
@@ -53,13 +53,13 @@ h2,h3 {
 }
 
 a {
-    color:darkcyan;
+    color:rgb(181, 192, 208);
     text-decoration: none;
 }
 
 a:hover {
     color: whitesmoke;
-    background-color: darkcyan;
+    background-color: rgb(217, 175, 247);
     text-decoration: none;
 }
 
@@ -68,6 +68,49 @@ footer {
     text-align: center;
     padding: 1em;
 }
+
+/* start positioning styles */
+
+.text-align-center{
+    text-align:center;
+    background-color:aqua;
+ }
+ 
+ .margin-auto > div{
+    margin:auto;
+    width:50%;
+    background-color:beige;
+    text-align:center;
+ }
+
+/* Allows box to take up full space, ignoring padding/margin */
+* {
+    box-sizing: border-box;
+  }
+ 
+ 
+ /* Create two equal columns that floats next to each other */
+ .my-column {
+    float: left;
+    width: 50%;
+    padding: 10px;
+    min-height: 300px; /* Can be removed. Only for demonstration */
+  }
+   /* Clear floats after the columns */
+  .my-row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+ 
+  @media all and (max-width:500px) {
+    .my-column {
+        width: 100%;
+      }
+ }
+ 
+/* end positioning styles */
+
 
 /* Responsive rules */
 
